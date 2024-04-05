@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { makeBooking } from "../redux/actions";
 import { FaPlus } from "react-icons/fa";
+// import countryData from "../../public/country.json";
 const Book = () => {
   const data = useSelector((state) => state.data);
   const size = data.length;
@@ -30,7 +31,23 @@ const Book = () => {
     }
   };
 
-  return (
+  // const countryOptions = countriesData.countries.map((country, index) => (
+  //   <option key={index}>{country}</option>
+  // ));
+
+//   <select
+//   className="outline-none px-2 py-2 w-full"
+//   name="from"
+//   required
+//   onChange={(e) => handleChange(e)}
+// >
+//   <option value="" hidden>
+//     Please Select
+//   </option>
+//   {countryOptions}
+// </select>
+
+return (
     <div className="mt-[160px] mx-4 md:mt-[160px] relative">
       <div className="bg-white rounded-md max-w-6xl w-full mx-auto">
         <form className="flex flex-col md:flex-row">
